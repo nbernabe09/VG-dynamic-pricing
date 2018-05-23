@@ -10,10 +10,10 @@ if (process.env.NODE_ENV === "production") {
 }
 
 const connection = mysql.createConnection({
-  host: process.env.JAWSDB_URL,
-  user: process.env.username,
-  password: process.env.password,
-  database: process.env.database
+  host: process.env.JAWSDB_URL || "192.168.2.161",
+  user: process.env.username || "username",
+  password: process.env.password || "password",
+  database: process.env.database || "peplinks"
 });
 
 connection.connect(error => {
