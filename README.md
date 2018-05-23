@@ -1,1 +1,1 @@
-# VG-dynamic-pricing
+# Digital Scribble Dynamic Pricing
